@@ -1,12 +1,12 @@
 import effectivenessMatrix from './effectiveness-matrix.model';
 
 import { PokemonApiResponse } from "./pokemon-api-response.model";
-import { PokemonType } from "./pokemon-type";
+import { PokemonType } from "./pokemon-type.model";
 import { Types } from "./pokemon-types.model";
 import { TypeEffectiveness } from "./type-effectiveness.model";
 import { TypeSlot } from "./type-slot.model";
 
-interface Pokemon {
+export interface Pokemon {
     id: number;
     name: string;
     height: number;

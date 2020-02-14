@@ -1,3 +1,4 @@
-import { getPokemon } from './routes/pokemon.route';
+import { getPokemon, getPokemonSuggestions } from './routes/pokemon.route';
 
 exports.pokemon = getPokemon;
+exports.pokemonSuggestions = getPokemonSuggestions;
