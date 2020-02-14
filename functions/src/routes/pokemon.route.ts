@@ -15,11 +15,14 @@ export const getPokemon = https.onRequest(async (req: Request, res: Response) =>
 
 export const getPokemonSuggestions = https.onRequest(async (req: Request, res: Response) => {
     const { search } = req.query;
+    const start = 0;
+    const maxSuggestions = 5;
+    
     try {
         const suggestions = await getPokemonSuggestionsByName(search);
         cors(req, res);
-        res.json(suggestions);
+        res.json(suggestions.slice(start, maxSuggestions));
     } catch (error) {
-        res.sendStatus(404);
+        res.sendStatus(500).send(error);
     }
 });
