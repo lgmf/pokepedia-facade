@@ -56,7 +56,9 @@
     },
     "trailing-comma": {
       "severity": "warning"
-    }
+    },
+    "indent": [true, "spaces", 2],
+    "quotemark": [true, "single"]
   },
   "defaultSeverity": "error"
 }

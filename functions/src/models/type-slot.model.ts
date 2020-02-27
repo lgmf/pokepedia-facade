@@ -1,7 +1,6 @@
-import { PokemonType } from "./pokemon-type.model";
+import { PokemonType } from './pokemon-type.model';
 
 export interface TypeSlot {
-    slot: number;
-    type: PokemonType;
+  slot: number;
+  type: PokemonType;
 }
-  
